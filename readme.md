@@ -2,6 +2,7 @@ API Documentation
 Base URL
 All API endpoints are relative to: https://getvideo.onrender.com
 Upload Video
+``` json
 Endpoint: POST /upload
 Description: Upload a recorded screen video.
 Request:
@@ -37,6 +38,8 @@ Description: The specified video file does not exist.
 Response Body: { "error": "Video not found" }
 Example Usage
 Uploading Video (JavaScript Fetch API)
+
+``` 
 ```javascript
 
 async function uploadVideo(videoBlob) {
