@@ -1,6 +1,6 @@
 API Documentation
 Base URL
-All API endpoints are relative to: http://localhost:3000
+All API endpoints are relative to: https://getvideo.onrender.com
 Upload Video
 Endpoint: POST /upload
 Description: Upload a recorded screen video.
