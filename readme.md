@@ -65,7 +65,6 @@ async function uploadVideo(videoBlob) {
 ```
 Retrieving Video (JavaScript Fetch API)
 ``` javascript
-Copy code
 async function getVideo(filename) {
   try {
     const response = await fetch(`https://getvideo.onrender.com/video/${filename}`);
