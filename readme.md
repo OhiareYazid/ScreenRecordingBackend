@@ -47,7 +47,7 @@ async function uploadVideo(videoBlob) {
     const formData = new FormData();
     formData.append('video', videoBlob, 'recorded-screen.mp4');
 
-    const response = await fetch('http://localhost:3000/upload', {
+    const response = await fetch('https://getvideo.onrender.com/upload', {
       method: 'POST',
       body: formData
     });
@@ -68,7 +68,7 @@ Retrieving Video (JavaScript Fetch API)
 Copy code
 async function getVideo(filename) {
   try {
-    const response = await fetch(`http://localhost:3000/video/${filename}`);
+    const response = await fetch(`https://getvideo.onrender.com/video/${filename}`);
 
     if (response.ok) {
       const videoBlob = await response.blob();
